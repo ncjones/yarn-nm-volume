@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  script:
+    image: node:16-alpine
+    working_dir: /work
+    stop_signal: SIGKILL
+    volumes: [ 
+      ".:/work",
+      "node-modules:/work/node_modules"
+    ]
+    command:
+      - sh
+      - -c
+      - |
+        echo "
+        To execute a script, run:
+        docker-compose run script {command}"
+
+volumes:
+  node-modules:
