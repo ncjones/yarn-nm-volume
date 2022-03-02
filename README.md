@@ -1,7 +1,7 @@
 # yarn-nm-volume
 
 Demonstrates error installing dependencies into Docker volume using Yarn 3 with
-node modules linker. https://github.com/yarnpkg/berry/issues/1184
+node modules linker. https://github.com/yarnpkg/berry/issues/4172
 
 
 To reproduce the error:
